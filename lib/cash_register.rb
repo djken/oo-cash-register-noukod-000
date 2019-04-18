@@ -14,11 +14,11 @@ class CashRegister
     self.total += price * item_qty
     @transaction.push(price)
     
-    # i = item_qty
-    # until i == 0 do
-    #   @all_added_items << title
-    #   i -= 1
-    # end
+    i = item_qty
+    until i == 0 do
+      @all_added_items << title
+      i -= 1
+    end
   end
   
   def apply_discount 
