@@ -15,7 +15,8 @@ class CashRegister
     @transaction.push(price)
     
     # i = item_qty
-    until item_qty == 0 do @all_added_items << title
+    until item_qty == 0 do 
+      @all_added_items << title
       item_qty -= 1
     end
   end
