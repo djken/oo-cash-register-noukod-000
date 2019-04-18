@@ -15,10 +15,7 @@ class CashRegister
     @transaction.push(price)
     
     i = item_qty
-    until i == 0 do
-      @all_added_items << title
-      i -= 1
-    end
+    until i == 0 { @all_added_items << title i -= 1}
   end
   
   def apply_discount 
