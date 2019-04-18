@@ -16,7 +16,6 @@ class CashRegister
     
     if item_qty == 0 do @all_added_items << title
       i -= 1
-    end
   end
   
   def apply_discount 
